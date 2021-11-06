@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBOutlet_IBAction_IBOutletCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VU-Xh-ykj">
+                                <rect key="frame" x="100" y="420" width="212" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Accept dare"/>
+                                <connections>
+                                    <action selector="acceptingDare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wt2-p4-yFC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5k-37-emL">
+                                <rect key="frame" x="100" y="503" width="212" height="31"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change font color"/>
+                                <connections>
+                                    <action selector="changingTextCollor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9PC-dQ-eld"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuC-0g-HRc">
+                                <rect key="frame" x="100" y="584" width="212" height="31"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset dare"/>
+                                <connections>
+                                    <action selector="resettingDare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3G-yP-zHQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the buttons I dare you " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEz-8X-EgO">
+                                <rect key="frame" x="33" y="174" width="348" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="gj7-Xv-sSe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eEz-8X-EgO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2YP-Ep-Kxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YuC-0g-HRc" secondAttribute="trailing" constant="102" id="32q-tM-8SO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YuC-0g-HRc" secondAttribute="bottom" constant="247" id="5YT-CR-u52"/>
+                            <constraint firstItem="O5k-37-emL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="9Aa-jm-S6D"/>
+                            <constraint firstItem="O5k-37-emL" firstAttribute="top" secondItem="0VU-Xh-ykj" secondAttribute="bottom" constant="52" id="Bxb-2g-ftc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O5k-37-emL" secondAttribute="trailing" constant="102" id="OFc-cO-I0F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0VU-Xh-ykj" secondAttribute="trailing" constant="102" id="Vlm-tC-wgf"/>
+                            <constraint firstItem="YuC-0g-HRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="fg8-zT-BAV"/>
+                            <constraint firstItem="0VU-Xh-ykj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="hNg-BF-lL5"/>
+                            <constraint firstItem="eEz-8X-EgO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="lAU-PH-nU5"/>
+                            <constraint firstItem="YuC-0g-HRc" firstAttribute="top" secondItem="O5k-37-emL" secondAttribute="bottom" constant="50" id="s5v-k4-hvb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="eEz-8X-EgO" id="zVl-To-w2g"/>
+                        <outletCollection property="buttons" destination="0VU-Xh-ykj" collectionClass="NSMutableArray" id="iBq-e4-bfU"/>
+                        <outletCollection property="buttons" destination="O5k-37-emL" collectionClass="NSMutableArray" id="FMq-qD-v7E"/>
+                        <outletCollection property="buttons" destination="YuC-0g-HRc" collectionClass="NSMutableArray" id="DBd-Gt-H4y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
